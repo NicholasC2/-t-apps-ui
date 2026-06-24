@@ -4,10 +4,12 @@ export default defineConfig({
   entry: ["src/index.ts"],
   format: ["esm", "cjs"],
   dts: true,
-  sourcemap: true,
   clean: true,
+  sourcemap: true,
   external: ["react", "react-dom"],
-  loader: {
-    ".css": "copy",
+  outExtension({ format }) {
+    return {
+      js: format === "esm" ? ".mjs" : ".js",
+    };
   },
 });

@@ -20,11 +20,5 @@
   "peerDependencies": {
     "react": "^18 || ^19",
     "react-dom": "^18 || ^19"
-  },
-  "devDependencies": {
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "tsup": "^8.5.1",
-    "typescript": "^6.0.3"
   }
 }
