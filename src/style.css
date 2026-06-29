@@ -94,3 +94,31 @@ body {
 .t-end {
   margin-left: auto;
 }
+
+.t-code {
+  position: relative;
+
+  display: block;
+  width: 100%;
+
+  background-color: var(--bg-3);
+  padding: 4px;
+  border: var(--border) solid 2px;
+  border-radius: 2px;
+
+  box-sizing: border-box;
+}
+
+.t-code > .t-copy {
+  position: absolute;
+
+  height: 1.3rem;
+  width: 1.3rem;
+
+  top: 0;
+  right: 0;
+
+  color: var(--fg);
+
+  cursor: pointer;
+}
