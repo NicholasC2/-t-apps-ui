@@ -58,7 +58,12 @@ body {
 .t-button { 
   user-select: none; 
   cursor: pointer; 
-} 
+}
+
+.t-button:disabled {
+  opacity: 50%;
+  pointer-events: none;
+}
 
 .t-button:hover { 
   background-color: var(--component-bg-hover); 
